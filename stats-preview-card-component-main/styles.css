@@ -1,0 +1,134 @@
+body {
+  background-color: #0A0C1C;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.main-text {
+  text-align: center;
+}
+
+.main-text h1 {
+  font-weight: 700;
+  font-size: 1.75em;
+  margin: 15px 0 25px 0;
+}
+
+.main-text h1 span {
+  color: #AB5CDB;
+}
+
+.main-text p {
+  font-size: 0.95em;
+  line-height: 27px;
+}
+
+.mobile-img {
+  height: 240px;
+  background-color: #AB5CDB;
+  border-radius: 8px 8px 0 0;
+}
+
+.mobile-img img {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  opacity: 80%;
+}
+
+.desktop-img {
+  display: none;
+}
+
+.card {
+  max-width: 327px;
+  background-color: #1B1937;
+  border-radius: 8px;
+}
+
+.card-body {
+  padding: 10%;
+}
+
+.stats {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.stats div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 9%;
+}
+
+.stats div span:first-of-type {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-bottom: 2%;
+}
+
+.stats div span:last-of-type {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .card {
+    max-width: 100%;
+    width: 1110px;
+  }
+  .mobile-img {
+    display: none;
+  }
+  .desktop-img {
+    display: block;
+    background-color: #AB5CDB;
+    border-radius: 0 8px 8px 0;
+  }
+  .desktop-img img {
+    width: 100%;
+    mix-blend-mode: multiply;
+    opacity: 80%;
+  }
+  .main-text {
+    text-align: left;
+  }
+  .main-text h1 {
+    font-size: 2.25em;
+  }
+  .stats {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 10%;
+    margin-top: 35px;
+  }
+  .card-body {
+    padding: 10% 18% 10% 12%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
